@@ -10,9 +10,7 @@ package polymorphism;
 		    public void Backend(){
 		        System.out.println("Java & Python");
 		    }
-		    public void Fullstack(){
-		        System.out.println("UI,UX & Java, Python");
-		    }
+		    
 		}
 		class Fullstackdeveloper extends Domain{
 		    public void Frontend(){
@@ -30,9 +28,11 @@ package polymorphism;
 		 
 		public class Overriding{
 		    public static void main(String [] args){
-		        Fullstackdeveloper d = new Fullstackdeveloper();
+		        Fullstackdeveloper e = new Fullstackdeveloper();
+		    	Domain d = new Fullstackdeveloper();
 		        d.Frontend();
 		        d.Backend();
+		        e.Work();
 		    }
 		}
 
